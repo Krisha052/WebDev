@@ -1,0 +1,29 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Attribute selector</title>
+    </head>
+    <style>
+        a[href] { /* Selects all anchor tags with an href attribute */
+            color: blue;
+            text-decoration: none;
+        }
+        a[href^="https://"] { /* Selects all anchor tags with an href attribute that starts with "https://" */
+            color: green;
+        }
+        a[href$=".com"] { /* Selects all anchor tags with an href attribute that ends with ".com" */
+            color: red;
+        }
+        a[href*="facebook"] { /* Selects all anchor tags with an href attribute that contains "facebook" */
+            font-weight: bold;
+        }
+    </style>
+    <body>
+        <ul>
+            <li><a href="https://google.com">Google</a></li>
+            <li><a href="https://facebook.com">Facebook</a></li>
+            <li><a href="https://twitter.com">Twitter</a></li>
+        </ul>
+    </body>
+</html>
