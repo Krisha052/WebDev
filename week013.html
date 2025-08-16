@@ -1,0 +1,29 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Hover (pseudoclass selector)</title>
+    <style>
+        a:hover { /* Selects all anchor tags when hovered over */
+            color: orange;
+            text-decoration: underline;
+        }
+        a:visited { /* Selects all anchor tags that have been visited */
+            color: purple;
+        }
+        a:active { /* Selects all anchor tags when they are being clicked */
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li><a href="https://google.com">Google</a></li>
+        <li><a href="https://facebook.com">Facebook</a></li>
+        <li><a href="https://twitter.com">Twitter</a></li>
+    </ul>
+    <p>Hover over the links to see the effect of the hover pseudoclass.</p>
+    <p>Click on the links to see the effect of the active pseudoclass.</p>
+    <p>Visit the links to see the effect of the visited pseudoclass.</p>
+</ul>
+</body>
