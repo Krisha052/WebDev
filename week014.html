@@ -1,0 +1,37 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Responsive Design (Media Queries)</title>
+</head>
+<body>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            width: 100%;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+        @media (max-width: 600px) { /* Applies styles for screens smaller than or equal to 600px */
+            .container {
+                background-color: lightblue;
+            }
+        }
+        @media (min-width: 601px) and (max-width: 1200px) { /* Applies styles for screens between 601px and 1200px */
+            .container {
+                background-color: lightgreen;
+            }
+        }
+        @media (min-width: 1201px) { /* Applies styles for screens larger than 1200px */
+            .container {
+                background-color: lightcoral;
+            }
+        }
+    </style>
+    <div class="container">
+        <h1>Responsive Design Example</h1>
+        <p>Resize the browser window to see the background color change based on the screen width.</p>
+    </div>
+</body>
