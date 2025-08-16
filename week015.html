@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><title>Flexbox</title></head>
+<body>
+    <!-- 
+        This div uses CSS Flexbox to arrange its child items in a row.
+        - display: flex enables flexbox layout.
+        - justify-content: space-between spaces the items evenly.
+        - align-items: center vertically centers the items.
+        - padding and background-color style the container.
+    -->
+    <div id="flex-container" style="display: flex; justify-content: space-between; align-items: center; padding: 20px; background-color: lightgray;">
+        <!-- 
+            Each child div is a flex item:
+            - flex: 1 means Item 1 and Item 3 each take up 1 part of the available space.
+            - flex: 2 means Item 2 takes up 2 parts, so it's twice as wide as the others.
+            - padding and background-color style each item.
+        -->
+        <div style="flex: 1; padding: 10px; background-color: lightblue;">Item 1</div>
+        <div style="flex: 2; padding: 10px; background-color: lightgreen;">Item 2</div>
+        <div style="flex: 1; padding: 10px; background-color: lightcoral;">Item 3</div>
+    </div>
+    <!-- 
+        This paragraph explains that resizing the browser window will show how the flex items adjust their size and position responsively.
+    -->
+    <p>Resize the browser window to see how the flex items adjust their size and position responsively.</p>
+</body>
+</html>
+
